@@ -1,4 +1,5 @@
 # Generate file that computes the distance of the drivers to the TSS
+# python3 ../driver_distance_to_tss.py _ism_attributions_driversfw.txt ../geneTSS.txt > DistancetoTSS_ism_attributions_driversfw.txt
 
 import numpy as np
 import sys, os
