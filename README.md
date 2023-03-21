@@ -2,6 +2,8 @@
 
 This repository contains the data and the scripts that were used to assess Enformer's [[1]](#1) ability to predict differential gene expression across 839 individuals [[2]](#2).
 
+To reproduce our analysis that is shown in the paper [[2]](#2), please follow the examplary commands in Fig1.sh, Fig2.sh, and FigS.sh. 
+
 ## Abstract
 
 _Deep learning (DL) methods accurately predict various functional properties from genomic DNA, including gene expression, promising to serve as an important tool in interpreting the full spectrum of genetic variations in personal genomes. However, systematic out-of-sample benchmarking is needed to assess the gap in their utility as personalized DNA interpreters. Using paired Whole Genome Sequencing and gene expression data we evaluate DL sequence-to-expression models, identifying their critical failure to make correct predictions on a substantial number of genomic loci, highlighting the limits of the current model training paradigm._
