@@ -1,3 +1,83 @@
 This directory contains intermediate data files that were generated with the scripts in enformer_analysis/ and can be used to reproduce intermediate results.
 
+# ALLgenes_ism_attributions_driversfw_refseq_winsize13.npz
+- Contains one-hot-encodings of 13bp around the driving SNVs
+- The base in the center is the base that is present in the reference sequence
+
+# ALLgenes_ism_attributions_driversfw_varseq_winsize13.npz
+- Contains one-hot-encodings of 13bp around the driving SNVs
+- The base in the center is the base is the variant instead of the reference
+
+Add files via upload
+yesterday
+ALLgenes_ism_attributions_driversfwmain_ism_significance_stats.txt
+Add files via upload
+yesterday
+ALLgenes_ism_attributions_driversfwmain_refseq_winsize13.npz
+Add files via upload
+yesterday
+ALLgenes_ism_attributions_driversfwmain_varseq_winsize13.npz
+Add files via upload
+yesterday
+Enformer_predictions.txt.gz
+Add files via upload
+yesterday
+MeanGeXPredFineTuned.txt
+Add files via upload
+yesterday
+Observed_gene_expression.txt.gz
+Add files via upload
+yesterday
+PrediXcanCorrelationWithExpressionENSG.tsv
+Add files via upload
+yesterday
+Prediction_correlationsCageAdultBrainGeneSpecific_CorrelationtoObsRandomNull_tstats_set0.2.list
+Add files via upload
+yesterday
+Prediction_correlationsCageAdultBrain_Allstats.txt
+Add files via upload
+yesterday
+README
+Update README
+now
+SupplementaryTable1.tsv
+Add files via upload
+yesterday
+SupplementaryTable2.tsv
+Add files via upload
+yesterday
+SupplementaryTable3.txt
+Add files via upload
+yesterday
+enformer_test_set_genes.npy
+Add files via upload
+yesterday
+gene-ids-and-positions.tsv
+Add files via upload
+yesterday
+geneTSS.txt
+Add files via upload
+yesterday
+ism_res.tar
+Add files via upload
+last week
+maindrivernpz.tar
+Add files via upload
+last week
+snp_positions.tar
+Add files via upload
+last week
+tss1000bpnpz.tar
+Add files via upload
+last week
+tss_attribution_stats.txt
+Add files via upload
+yesterday
+variant_info_100kA.tar
+Add files via upload
+last week
+variant_info_100kB.tar
+Add files via upload
+last week
+variant_info_100kC.tar
 
