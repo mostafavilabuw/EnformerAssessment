@@ -1,7 +1,8 @@
+This directory contins scripts that were used to analyze predictions for differential gene expression between 839 individuals
+Please also refer to Fig1.sh, Fig2.sh, and FigS.sh to reproduce this analysis.
+
 ## attribution_plot.py
-
 - plot the attributions of all SNVs for a gene along the genomic location
-
 `$python attribution_plot.py ENSG00000013573_ism_attributions.txt ISM --colors ../variant_info_100k/ENSG00000013573_frequency.txt --tss geneTSS.txt ENSG00000013573`
 
 ##  cluster_grad_attributions.py
