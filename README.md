@@ -13,4 +13,4 @@ _Deep learning (DL) methods accurately predict various functional properties fro
 Avsec, Ž., Agarwal, V., Visentin, D., Ledsam, J.R., Grabska-Barwinska, A., Taylor, K.R., Assael, Y., Jumper, J., Kohli, P. and Kelley, D.R., 2021. Effective gene expression prediction from sequence by integrating long-range interactions. [Nature methods](https://www.nature.com/articles/s41592-021-01252-x), 18(10), pp.1196-1203.
 
 <a id="2">[2]</a>
-Sasse, A.*, Ng, B.*, Spiro, A.*, Tasaki, S., Bennett, D., Gaiteri, C., De Jager, P.L., Chikina, M., and Mostafavi, S., 2023. How far are we from personalized gene expression prediction using sequence-to-expression deep neural networks? [bioRxiv](https://doi.org/10.1101/2023.03.16.532969), https://doi.org/10.1101/2023.03.16.532969, * These authors contributed equally
+Sasse, A.\*, Ng, B.\*, Spiro, A.\*, Tasaki, S., Bennett, D., Gaiteri, C., De Jager, P.L., Chikina, M., and Mostafavi, S., 2023. How far are we from personalized gene expression prediction using sequence-to-expression deep neural networks? [bioRxiv](https://doi.org/10.1101/2023.03.16.532969), https://doi.org/10.1101/2023.03.16.532969, \* These authors contributed equally
