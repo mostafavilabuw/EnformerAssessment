@@ -7,9 +7,10 @@
 function exprPred = enformerFinetuned(enformPat,enformMat,modelPath)
 %% Load mean expression model
 fid = fopen(modelPath);
-temp = textscan(fid,'%f');
+header = regexp(fgetl(fid),',','split');
+temp = textscan(fid,'%s%f','Delimiter',',');
 fclose(fid);
-wt = temp{1};
+wt = temp{2};
 beta = wt(1:end-1);
 a0 = wt(end);
 
