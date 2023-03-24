@@ -1,6 +1,6 @@
 # get ISM within 20bp of each driver SNP
 # start with the most common variant inserted, then insert each possible variant
-# same as from_main_var_drivers_ISM but with main variant inserted 
+# same as from_ref_drivers_ISM but with main variant inserted 
 
 import time
 import pandas as pd
