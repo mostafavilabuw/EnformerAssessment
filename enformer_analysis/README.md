@@ -39,11 +39,13 @@ To generate the data used in these analyses, we use the Enformer model from 'htt
 
 ## attribution_plot.py
 - plot the attributions of all SNVs for a gene along the genomic location
+
 `$python attribution_plot.py ENSG00000013573_ism_attributions.txt ISM --colors ../variant_info_100k/ENSG00000013573_frequency.txt --tss geneTSS.txt ENSG00000013573`
 
 ##  cluster_grad_attributions.py
 -Clusters gradient attributions on the standard deviation within windows of 128bp
 - Needs to be executed in directory with full length gradient and input sequence one-hot encodings (not available on github because of the size)
+
 `$python cluster_grad_attributions.py <genesetfile> Prediction_correlationsCageAdultBrain.txt`
 
 ## compute_attribution.py
