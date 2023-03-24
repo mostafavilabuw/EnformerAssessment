@@ -1,5 +1,41 @@
-This directory contins scripts that were used to analyze predictions for differential gene expression between 839 individuals
+This directory contins scripts that were used to make and analyze predictions for differential gene expression between 839 individuals
 Please also refer to Fig1.sh, Fig2.sh, and FigS.sh to reproduce this analysis.
+
+To generate the data used in these analyses, we use the Enformer model from 'https://tfhub.dev/deepmind/enformer/1', as described in 'https://github.com/deepmind/deepmind-research/tree/master/enformer'. 
+
+# The following scripts use the Enformer model to generate attributions for differential gene expression prediction using the variants found in these 839 individuals. 
+- These anlayses use variant information for each gene from ../variant_info_100k/{gene_id}.csv. These variant information files are produced from a VCF file in 'EnformerAssessment/process_genomic_data/save_snp_info.txt'
+
+## per_SNP_ISM.py 
+- save ISM results for Enformer on a given gene set by inserting the main (most common) variant for each SNP position in a gene 
+- gene_file argument gives the genes to save this analysis for 
+
+## gradient_attributions.py
+- save (gradient at reference sequence x reference) and (gradient at reference sequence x main variant) for each main variant at each SNP position for a given gene
+- gene_file argument gives the genes to save this analysis for 
+
+## from_ref_drivers_ISM.py
+- get ISM for each nucleotide within a window (here, 20bp) of each driver SNP (drivers found in select_drivers.py, as described below)
+- start with the reference sequence, then insert each possible variant (same as from_main_var_drivers_ISM.py but without main variant inserted)
+- edit 'drivers' in file to select which drivers to save this anlaysis for 
+
+## from_main_var_drivers_ISM.py
+- get ISM for each nucleotide within a window (here, 20bp) of each driver SNP (drivers found in select_drivers.py, as described below)
+- start with the most common variant inserted, then insert each possible variant (same as from_ref_drivers_ISM.py but with main variant inserted)
+- edit 'drivers' in file to select which drivers to save this anlaysis for 
+
+## TSS_win_ISM.py 
+- save Enformer output for each nucleotide inserted at every position within a window (here, 1000bp) of the TSS
+- gene_file argument gives the genes to save this analysis for 
+
+## predict_with_augmented_data.py
+- test effects of data augmentation (+- 3bp shifts and reverse complement) on Enformer output
+- gene_file argument gives the genes to save this analysis for 
+- this analysis used individual genomes found in ../extractSequence/results/sequence100K/' (not available on github because of the size)
+
+
+
+# The following scripts analyze the above attributions: 
 
 ## attribution_plot.py
 - plot the attributions of all SNVs for a gene along the genomic location
