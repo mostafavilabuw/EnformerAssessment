@@ -32,8 +32,7 @@ To generate the data used in these analyses, we use the Enformer model from 'htt
 ## predict_with_augmented_data.py
 - test effects of data augmentation (+- 3bp shifts and reverse complement) on Enformer output
 - gene_file argument gives the genes to save this analysis for 
-- this analysis used individual genomes found in ../extractSequence/results/sequence100K/' (not available on github because of the size)
-
+- this analysis used individual genomes found in ../extractSequence/results/sequence100K/' 
 
 
 # The following scripts analyze the above attributions: 
