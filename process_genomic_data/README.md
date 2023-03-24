@@ -1,4 +1,4 @@
-This directory contains scripts used to process the genomic data used in make and analyze predictions for differential gene expression between 839 individuals using the Enformer model.
+This directory contains scripts used to process the genomic data used to make and analyze predictions for differential gene expression between 839 individuals using the Enformer model.
 
 
 ## save_ref_seqs.py
