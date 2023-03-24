@@ -1,4 +1,4 @@
-# Test affect of data augmentation (shifts and reverse complement) on Enformer output
+# Test effect of data augmentation (shifts and reverse complement) on Enformer output
 
 import time
 import pandas as pd
