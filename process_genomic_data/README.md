@@ -2,8 +2,8 @@ This directory contains scripts used to process the genomic data used to make an
 
 
 ## save_ref_seqs.py
-- save onehot-encoded reference genomic sequences within a window window (here, 100k) around the TSS from fasta files 
-- these fasta files can be downloaded from UCSC genomc browser, for ex, rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz ./
+- save onehot-encoded reference genomic sequences within a window (here, 100k) around the TSS from fasta files 
+- fasta files can be downloaded from UCSC genomc browser, for ex, rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz ./
 
 ## save_snp_info.py
-- from vcf, save variant information by gene for each SNP within 100k of the TSS
+- from vcf, save variant information by gene for each SNP within a window (here, 100k) of the TSS
