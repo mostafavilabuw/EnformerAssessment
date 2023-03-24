@@ -4,7 +4,7 @@ Please also refer to Fig1.sh, Fig2.sh, and FigS.sh to reproduce this analysis.
 To generate the data used in these analyses, we use the Enformer model from 'https://tfhub.dev/deepmind/enformer/1', as described in 'https://github.com/deepmind/deepmind-research/tree/master/enformer'. 
 
 # The following scripts use the Enformer model to generate attributions for differential gene expression prediction using the variants found in these 839 individuals. 
-- These anlayses use variant information for each gene from ../variant_info_100k/{gene_id}.csv. These variant information files are produced from a VCF file in 'EnformerAssessment/process_genomic_data/save_snp_info.txt'
+- These anlayses use variant information for each gene from ../variant_info_100k/{gene_id}.csv. These variant information files are produced from VCF file in 'EnformerAssessment/process_genomic_data/save_snp_info.txt'
 
 ## per_SNP_ISM.py 
 - save ISM results for Enformer on a given gene set by inserting the main (most common) variant for each SNP position in a gene 
