@@ -1,7 +1,7 @@
-This directory contins scripts that were used to make and analyze predictions for differential gene expression between 839 individuals
-Please also refer to Fig1.sh, Fig2.sh, and FigS.sh to reproduce this analysis.
+This directory contins scripts that were used to analyze predictions of Enformer on differential gene expression data from 839 individuals. 
+Please also refer to Fig1.sh, Fig2.sh, and FigS.sh to reproduce this analysis step by step. 
 
-To generate the data used in these analyses, we use the Enformer model from 'https://tfhub.dev/deepmind/enformer/1', as described in 'https://github.com/deepmind/deepmind-research/tree/master/enformer'. 
+To make predictions from one-hot encoded genomic sequences of 839 individuals, we use the Enformer model from 'https://tfhub.dev/deepmind/enformer/1', as described in 'https://github.com/deepmind/deepmind-research/tree/master/enformer'. 
 
 # The following scripts use the Enformer model to generate attributions for differential gene expression prediction using the variants found in these 839 individuals. 
 - These anlayses use variant information for each gene from ../variant_info_100k/{gene_id}.csv. These variant information files are produced from VCF file in 'EnformerAssessment/process_genomic_data/save_snp_info.txt'
