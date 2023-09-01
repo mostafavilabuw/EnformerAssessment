@@ -53,13 +53,13 @@ This directory contains intermediate data files that were generated with the scr
 - Gene set that was not used for training Enformer
 - See Method section in paper for details
 
-gene-ids-and-positions.tsv
+# gene-ids-and-positions.tsv
 - Gene ids, gene names, location in hg38, location in hg19, and strand information 
 
-geneTSS.txt
+# geneTSS.txt
 - Transcription start sites
 
-#ism_res.tar
+# ism_res.tar
 - Contains directory ism_res/ which contains CAGE,brain,adult track prediction from reference sequence, and reference sequence with individually inserted main variants
 
 # maindrivernpz.tar
@@ -79,6 +79,6 @@ geneTSS.txt
 - Personal gentype data cannot be shared with third party unless approved by the RADC. All requests to the investigator from the third party must be directed to the
 RADC in order to assure knowledge of and compliance with the rules and regulations.
 - Contains <geneid>snp_info.npz files
--   Files contain a matrix representing the genotype of all individuals, i.e rows are SNVs within input window and columns represent indivduals. 
--   Individuals with two copies of the major allele (genotype 0), those with one copy of the major allele (genotype 1) and those with two copies of the minor allele (genotype 2) 
+  - Files contain a matrix representing the genotype of all individuals, i.e rows are SNVs within input window and columns represent indivduals. 
+  - Individuals with two copies of the major allele (genotype 0), those with one copy of the major allele (genotype 1) and those with two copies of the minor allele (genotype 2) 
 
