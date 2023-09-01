@@ -76,8 +76,8 @@ This directory contains intermediate data files that were generated with the scr
 - Contains statistics from all files in tss1000bpnpz.tar, such as the max absolute ISM, and the standard deviation of ISMs within +-1000 bp around the TSS
 
 # variant_info_100k.tar
-- Personal gentype data cannot be shared with third party unless approved by the RADC. All requests to the investigator from the third party must be directed to the
-RADC in order to assure knowledge of and compliance with the rules and regulations.
+**Personal gentype data cannot be shared with third party unless approved by the RADC.** All requests to the investigator from the third party must be directed to the
+RADC in order to assure knowledge of and compliance with the rules and regulations (https://www.radc.rush.edu/)
 - Contains <geneid>snp_info.npz files
   - Files contain a matrix representing the genotype of all individuals, i.e rows are SNVs within input window and columns represent indivduals. 
   - Individuals with two copies of the major allele (genotype 0), those with one copy of the major allele (genotype 1) and those with two copies of the minor allele (genotype 2) 
