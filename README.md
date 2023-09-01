@@ -2,7 +2,13 @@
 
 This repository contains the data and the scripts that were used to assess Enformer's [[1]](#1) ability to predict differential gene expression across 839 individuals [[2]](#2).
 
-To reproduce our analysis that is shown in the paper [[2]](#2), please follow the examplary commands in Fig1.sh, Fig2.sh, and FigS.sh. 
+To reproduce our analysis [[2]](#2), please follow the examplary commands in Fig1.sh, Fig2.sh, and FigS.sh. These bash scripts were not intended to run by themselves. Instead, these scripts were meant to guide interested people through our analysis and document our analysis. Please **run each step separately** and if necessary replace hard coded file locations in python scripts with the correct location in the Data directory. Most intermediate output files from these scripts can also be found in the Data/ directory, so that intermediate steps can be skipped. 
+
+To reproduce the entire analysis, it is ***essential to obtain access to personal genotype data from the the Rush Memory and Aging Project (ROSMAP)**. The personal genotype data that was used in this study cannot be shared with a third party unless approved by the RADC. All requests to the investigator from the third party must be directed to the RADC in order to assure knowledge of and compliance with the rules and regulations. Genotype, RNA-seq, and DNAm data for the Religious Orders Study and Rush Memory and Aging Project (ROSMAP) samples are available from the Synapse AMP-AD Data Portal (Accession Code: syn2580853) as well as RADC Research Resource Sharing Hub at https://www.radc.rush.edu/.
+
+For RNA-seq pre-processing, please refer to the Supplementary Methods in [[2]](#2). In brief, we applied TMM normalization (using edgeR calcNormFactors) to the raw counts to estimate the effective library size of each individual. We then applied voom/limma to regress out confounds and convert the counts into log2(CPM). Technical covariates included: batch, study (ROS or MAP), RNA integrity number, postmortem interval, Library size, log PF number of aligned reads, PCT_CODING_BASES, PCT_INTERGENIC_BASES, PCT_PF_READS_ALIGNED, PCT_RIBOSOMAL_BASES, PCT_UTR_BASES, PERCENT_DUPLICATION, MEDIAN_3PRIME_BIAS, MEDIAN_5PRIME_TO_3PRIME_BIAS,  MEDIAN_CV_COVERAGE. Biological covariates, including 1) age, 2) sex, and 3) top 10 expression principal components. Both biological and technical covariates were regressed out from log raw read counts. Only genes with mean log2(CPM) > 2 were included. Mean expression values were retained for downstream analysis.
+
+The variant call files for whole genome sequencing (WGS) data from the ROSMAP in variant call format (VCF) were obtained from the Synapse repository (syn117074200). The coordinates of variant calls (GRCh37) were converted to GRCh38 coordinates using the Picard LiftoverVcf tool (http://broadinstitute.github.io/picard). The Eagle software2 version 2.4.1 was used to phase the genotypes with the default setting.
 
 ## Abstract
 
