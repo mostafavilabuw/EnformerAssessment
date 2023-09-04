@@ -10,3 +10,5 @@ This directory contains scripts used to process the genomic data used to make an
 
 ## extractSeq.py
 - using reference genomic fasta files (downloaded as described in save_ref_seqs.py) and variant information by gene (saved as described in save_snp_info.py), create personalized one-hot encodings, saved by gene as .npz files
+- variant information by gene is accessed here in in snp = pd.read_csv(filepath+'variantNucleotide'+winSiz+'/'+data.iloc[j,0]+'.csv',header=None,encoding='latin1')
+
