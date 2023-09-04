@@ -6,6 +6,13 @@ To prediction predict gene expression from one-hot encoded genomic sequences of 
 # The following scripts use the Enformer model to generate attributions for differential gene expression prediction using the variants found in these 839 individuals. 
 - These anlayses use variant information for each gene from ../variant_info_100k/{gene_id}.csv. These variant information files are produced from VCF file in 'EnformerAssessment/process_genomic_data/save_snp_info.txt'
 -  These anlayses use reference sequences .../ref_seqs/{gene_id+}.npy' for each gene. These reference sequences are produced in 'EnformerAssessment/process_genomic_data/save_ref_seqs.py'
+- These anlayses use personalized one-hot encodings {gene_id}.npz for each gene. These one-hot encodings are produced in 'EnformerAssessment/process_genomic_data/extractSeq.py'
+
+
+## basic_pred_gene_expr.py 
+- save Enformer predictions (from the specified track and bin) for a given gene
+- gene_file argument gives the genes to save this analysis for
+- predictions are made from personalized one-hot encodings saved as per gene as {gene_id}.npz, these can be saved using 'EnformerAssessment/process_genomic_data/extractSeq.py'
 
 ## per_SNP_ISM.py 
 - save ISM results for Enformer on a given gene set by inserting the main (most common) variant for each SNP position in a gene 
